@@ -372,6 +372,32 @@ input, select, textarea {
         border-radius: 30px;
     }
 
+/* File view */
+    .mobile{
+        display: none;
+    }
+
+    .fileview{
+        max-height: 100vh;
+    }
+
+    .fileheader{
+        padding: 20px;
+        max-height: 10vh;
+    }
+
+    .fileheader>*{
+        display: inline-block;
+        margin-right: 2em;
+        margin-bottom: 0;
+    }
+
+    .file{
+        width: 100vw;
+        height: 90vh;
+        padding: 0;
+        z-index: 0;
+    }
 /* drive */
 
     .drive {
@@ -2057,7 +2083,6 @@ input, select, textarea {
 					height: 3rem;
 					line-height: 3rem;
 				}
-
 		}
 
         .btn{
@@ -2878,6 +2903,7 @@ input, select, textarea {
                 background: #222;
                 padding: 2em 4em;
                 box-shadow: 0px -10px 75px #010101;
+                z-index: 3;
             }
 
             div>.bubble{
@@ -3354,6 +3380,18 @@ input, select, textarea {
             #wrapper iframe {
                 max-height: 300px
 			}
+            
+            .mobile{
+                display: contents;
+            }
+            
+            .mobile>a{
+                text-align: center;
+            }
+            
+            iframe.file{
+                display: none;
+            }
 
 		}
 

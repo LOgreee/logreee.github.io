@@ -2633,11 +2633,6 @@ input, select, textarea {
 			padding-left: 0.325rem;
 		}
 
-        .intro>.content>ul{
-            margin-top: 50vh;
-            transform: translateY(-50%);
-        }
-
             h1>a{
                 text-decoration: none;
             }
@@ -2868,7 +2863,6 @@ input, select, textarea {
 	#wrapper {
 		position: relative;
 		width: 100vw;
-		padding: 0 0 10rem 0;
 	}
 
 		#wrapper:before {
@@ -2898,16 +2892,18 @@ input, select, textarea {
 			#wrapper section:first-child {
 				margin-top: 0;
 			}
-    
-            #APropos{
-                background: #222;
-                padding: 2em 4em;
-                box-shadow: 0px -10px 75px #010101;
-                z-index: 3;
+
+            #wrapper>section.intro{
+                height: 100vh;
             }
 
-            div>.bubble{
-                background: #333;
+            .intro>.content>ul{
+                margin-top: 50vh;
+                transform: translateY(-50%);
+            }
+    
+            #wrapper>section#APropos{
+                height: 100vh;
             }
 
 			#wrapper section > header {
@@ -3077,7 +3073,7 @@ input, select, textarea {
 		}
 
 		#wrapper .bubble {
-			padding: 0 5rem;
+            margin-top: 5em;
 		}
 
 		@media screen and (max-width: 1280px) {
